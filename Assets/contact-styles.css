@@ -1,0 +1,466 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+
+
+/* Transition delay when clicked to light mode*/
+body:not(.dark-mode) {
+    transition: all 1.0s ;
+ 
+}
+
+/* Transition delay when clicked to Dark mode*/
+
+body.dark-mode{
+    transition: all 1.0s ;   
+}
+
+body{
+width: 100%;
+font-family: 'roboto', sans-serif;
+position: relative;
+background-color: rgb(255, 255, 255);
+background: #788f6c;
+
+color: rgb(0, 0, 0);
+line-height: 1.5;  
+}
+
+
+.brand{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: serif;
+    font-size: x-large; 
+    color: black;
+    
+    }
+
+/* LINKS */
+
+.links-container{
+    display: flex;
+    list-style: none;
+    }
+    
+    .link{
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    padding: 10px;
+    text-transform: capitalize;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    }
+    
+    .navbar{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    border-bottom: 1px solid black;
+    }
+    
+    
+/* Home styles */
+.home{
+    width: 100%;
+    min-height: calc(60vh - 300px);
+    height: auto;
+    margin-top: 120px;
+    padding: 0 10vw;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    }
+
+
+    .home-left{
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+         
+    }
+    #line-break1{
+        color: rgb(255, 102, 0);
+    }
+
+
+
+
+
+
+
+/* LINKS */
+
+    
+.links-container li a{
+    font-size: large;
+    font-weight: 600;
+}
+
+
+
+.link:hover:not(.active){
+    color: rgb(81, 6, 100);
+    transition:  0.2s;
+    
+    
+}
+#btn-darkmode{
+    margin-left: 20px;
+    padding: 15px;
+}
+.mode-button{
+    border: 0px;
+    padding: 6px;
+    width: 80px;
+    border-radius: 9px;
+    border-color: rgba(195, 168, 202, 0);
+    font-size: small;
+    font-weight: 500;
+     height: 34px; 
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0);
+  
+}
+.mode-button:hover{
+    cursor: pointer;
+    border-left: 0px;
+    border-right: 0px;
+ 
+}
+
+
+.link.active::after,
+.seperator::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1.6px;
+    background: rgb(19, 172, 78);
+    /* background: #03e9f4; */
+}
+
+/* Dark Mode Styles */
+.dark-mode{
+     background: #181f15;
+    color: white;
+   
+}
+
+body.dark-mode .mode-button::before{
+    content: 'Light Mode';
+    
+}
+body:not(.dark-mode) .mode-button::before{
+    content: 'Dark Mode';
+      
+}
+/* Changes to the buttons background color before click to darkmode */
+body:not(.dark-mode) .mode-button{
+    background-color: rgb(30, 27, 31);
+     color: White;
+
+}
+
+
+
+@media (max-width: 996px){
+    html{
+        font-size: 1rem;
+
+    }
+    
+    .link.active{
+        color: rgb(77, 230, 77) !important;
+
+    }
+    
+.link:hover:not(.active){
+    color: rgb(43, 184, 25);
+    transition:  0.2s;
+    
+    
+}
+   
+    /* toggle btn */
+    .toggle-btn{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 10vw;
+        cursor: pointer;
+    }
+    .toggle-btn span{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: rgb(0, 0, 0);
+        top: 30%;
+        transition: .5s;
+    }
+    .toggle-btn span:nth-child(2){
+        top: 70%;
+    }
+    .toggle-btn.active span:nth-child(1){
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .toggle-btn.active span:nth-child(2){
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    /* links */
+    .links-container{
+        position: absolute;
+        top: 60px;
+        background: #38053fdc;
+        width: 100%;
+        left: 0;
+        padding: 0 10vw;
+        flex-direction: column;
+        transition: .4s;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .links-container.show{
+        opacity: 1;
+        pointer-events: all;
+       
+    }
+    .link{
+        margin-left: auto;
+        text-align: center;
+        display: block;
+        height: 50px;
+    }
+
+
+
+    /* Home styles */
+    .home-section{
+        display: block;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+ 
+   
+}
+
+
+@media (max-width: 500px){
+    html{
+        font-size: 1rem;
+    }
+    img{
+        flex-shrink: 2;
+    }
+}
+
+/* Scroll Bar Styles */
+
+*::-webkit-scrollbar{
+    width: 12px;
+}
+*::-webkit-scrollbar-track{
+    background: #8da581;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(46, 6, 48);
+    border-radius: 20px;
+    border: 3px solid rgb(52, 3, 56);
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(73, 11, 75);
+    border: 3px solid rgb(64, 6, 71);
+}
+
+
+
+.para{
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+.contact-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+
+#contact-heading{
+/* display: flex;
+justify-content: center;
+align-items: center; */
+padding: 0 10vw;
+text-align: center;
+margin-bottom: 50px;
+letter-spacing: 0.025rem;
+color: rgb(255, 102, 0);
+border-bottom: 2px dashed  ;
+
+
+
+}
+.contact-form p{
+    margin-bottom: 15px;
+}
+
+.information{
+    max-width: 30%;
+    margin-right: 30px;
+    word-spacing: 1px;
+
+}
+
+.contact-form{
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+.contact-form input, .message{
+    width: 100%;
+    display:block;
+    height: 50px;
+    margin:5px 0;
+    background: #1b071b;
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    resize: none;
+    font-size: larger;
+    border-radius: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;}
+
+    
+.message{
+    margin:30px 0;
+    height: 180px;
+    
+}
+
+.contact-form .name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name input{
+    width: 49%;
+    margin: 0;
+}
+
+.contact-form, .btn[type = "submit"]{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.contact-btn{
+    float: left;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #381033;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    font-weight: 600;
+    margin-left: 5px !important;
+    letter-spacing: 0.025rem;
+
+}
+.contact-btn{
+    outline: 2px dashed rgb(22, 5, 29);
+    outline-offset: 3px;
+
+}
+.contact-btn:hover{
+    transition: 0.8s;
+    outline: 2px dashed white;
+    outline-offset: 3px;
+    background: rgb(255, 102, 0);
+
+
+
+}
+.para2{
+    margin-top: 20px;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 996px) {
+    .contact-area{
+        display: flex;
+        padding: 0 10vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .information{
+        margin-bottom: 50px;
+        max-width: 380px;
+        padding: 0 10px;
+
+    }
+
+    
+}
+@media (max-width: 400px) {
+    #btn-darkmode{
+        margin-left: 10px;
+        width: 68px;
+
+    }
+    
+}
+
+@media (max-width: 300px) {
+    #btn-darkmode{
+        margin-left: 10px !important;
+
+    }
+    
+    
+}
+
+
