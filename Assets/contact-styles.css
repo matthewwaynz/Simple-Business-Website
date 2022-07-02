@@ -26,7 +26,6 @@ width: 100%;
 font-family: 'roboto', sans-serif;
 position: relative;
 background-color: rgb(255, 255, 255);
-background: #788f6c;
 
 color: rgb(0, 0, 0);
 line-height: 1.5;  
@@ -60,7 +59,7 @@ line-height: 1.5;
     }
     
     .navbar{
-    background: rgb(255, 255, 255);
+    background: rgb(236, 231, 238);
     position: fixed;
     top: 0;
     left: 0;
@@ -160,7 +159,7 @@ line-height: 1.5;
 
 /* Dark Mode Styles */
 .dark-mode{
-     background: #181f15;
+     background: #0e0e01;
     color: white;
    
 }
@@ -331,11 +330,12 @@ text-align: center;
 margin-bottom: 50px;
 letter-spacing: 0.025rem;
 color: rgb(255, 102, 0);
-border-bottom: 2px dashed  ;
 
 
 
 }
+
+
 .contact-form p{
     margin-bottom: 15px;
 }
@@ -413,7 +413,7 @@ border-bottom: 2px dashed  ;
 }
 .contact-btn:hover{
     transition: 0.8s;
-    outline: 2px dashed white;
+    outline: 2px dashed rgb(221, 35, 212);
     outline-offset: 3px;
     background: rgb(255, 102, 0);
 

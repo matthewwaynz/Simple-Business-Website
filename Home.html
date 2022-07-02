@@ -7,6 +7,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="./Assets/NwProStyles.css">
     <script src="https://kit.fontawesome.com/8c435d0bd0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
    
 </head>
@@ -34,7 +37,7 @@
 
 
             <div class="home-left">
-                    <h1 class="head-1">Your Partner to <span id="line-break"></span>launch your Product<span id="line-break"></span> Online!</h1>
+                    <h1 class="head-1">Your Partner to <span id="line-break"></span>launch your Product<span id="line-break"></span><span class="color-chng"> Online!</span></h1>
                     <span id="line-break"></span>
                         <p id="home-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit
                             . Impedit saepe totams! Dolorem molestia
@@ -47,7 +50,15 @@
     </section>    
   
     <main class="page-content">
-        <div class="card">
+        <div class="card" data-aos="fade-up"
+         data-aos-offset="200"
+          data-aos-delay="50" 
+          data-aos-duration="1000" 
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placeholder="top-center"
+        >
             <div class="content">
                 <h2 class="title">Lorem sit amet </h2>
                 <p class="copyClass">Lorem ipsum dolor, sit amet consectetur adipisicing el umque autem odit distinctio?</p><button class="btn">Another Button</button>
@@ -69,7 +80,7 @@
                     illo. Doloremq</p><button class="btn">Click Here</button>
             </div>
         </div>
-        <div class="card">
+        <div class="card" >
             <div class="content">
                 <h2 class="title">Going to Mars</h2>
                 <p class="copyClass">Space xLorem ipsum dolor sit amet conse</p><button class="btn">Lets Go</button>
@@ -117,7 +128,15 @@
             sequi voluptates necessitatibus minus recusandae.
 
     </p>
-        <p class="dummytext">
+        <p class="dummytext"
+        data-aos="fade-up"
+         data-aos-offset="200"
+          data-aos-delay="50" 
+          data-aos-duration="1000" 
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placeholder="top-center">
             Lorem ipsum dolor sit amet consectetur 
             adipisicing elit. Quaerat quas magni esse?
             Sint earum ipsam vitae ab vel re
@@ -214,6 +233,12 @@ function myFunction() {
             element.classList.toggle("dark-mode");
             
         }
+
+
+
+
+        // AOS LIBRARY 
+        AOS.init();
 
 </script>
 </body>

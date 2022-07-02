@@ -156,7 +156,7 @@ border-bottom:  1px solid rgb(19, 5, 19);
 
 /* Dark Mode Styles */
 .dark-mode{
-    background-color: rgb(6, 1, 8);
+    background: #0e0e01;
     color: white;
    
 }
@@ -175,7 +175,10 @@ body:not(.dark-mode) .mode-button{
      color: White;
 
 }
+    .color-chng{
+        color: rgb(255, 102, 0);
 
+}
 
 
 
@@ -464,7 +467,7 @@ body {
     background-color: #0d0d0d;
 }
 .btn:focus {
-    outline: 2px dashed rgb(149, 37, 194);
+    outline: 2px dashed rgb(255, 102, 0);
     outline-offset: 3px;
 }
 @media (hover: hover) and (min-width: 600px) {

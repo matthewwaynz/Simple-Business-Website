@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <script src="https://kit.fontawesome.com/8c435d0bd0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Assets/contact-styles.css">
+    <script src="https://kit.fontawesome.com/8c435d0bd0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </head>
@@ -66,7 +68,7 @@
             ipsa fugiat aspernatur magni 
             aperiam natus officia iusto beatae. Asperiores!
         </p>
-     <div id="contact-heading"><h2>Lets Start a Conversation</h2></div>
+     <div id="contact-heading"><h2 class="heading--1">Lets Start a Conversation</h2></div>
 
     <div class="contact-area">
         <div class="information">
@@ -89,7 +91,15 @@
 
 
 
-        <div class="contact-form">
+        <div class="contact-form" 
+        data-aos="fade-up"
+         data-aos-offset="200"
+          data-aos-delay="50" 
+          data-aos-duration="1000" 
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placeholder="top-center">
             <p><b>Please note: </b> all fields are required.</p>
             <form action="" method="post">
                 <input name="fullName" style="display: none" type="text">
@@ -185,6 +195,12 @@ function myFunction() {
             element.classList.toggle("dark-mode");
             
         }
+
+        
+
+
+         // AOS LIBRARY 
+         AOS.init();
 
 
 </script>
