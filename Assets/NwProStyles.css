@@ -74,7 +74,7 @@ border-bottom:  1px solid rgb(19, 5, 19);
 /* Home styles */
 .home{
     width: 100%;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 80px);
     height: auto;
     margin-top: 70px;
     padding: 0 10vw;
@@ -189,7 +189,7 @@ body:not(.dark-mode) .mode-button{
     }
     .home{
         width: 100%;
-        min-height: calc(100vh - 280px);
+        min-height: calc(100vh - 80px);
         height: auto;
         margin-bottom: 30px;
     }
