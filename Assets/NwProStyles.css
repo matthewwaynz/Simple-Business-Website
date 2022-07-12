@@ -13,6 +13,7 @@ html , body{
 }
 
 
+
 /* Transition delay when clicked to light mode*/
 body:not(.dark-mode) {
     transition: all 1.0s ;
