@@ -9,13 +9,12 @@ margin: 0;
 .section-a{
     width: 100%;
     height: 120vh;
+    
   
 
     transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-html, body{
-    overflow-x: hidden;
-}
+
 
 
 
