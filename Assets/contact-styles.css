@@ -7,6 +7,11 @@ padding: 0;
 margin: 0;
 }
 
+html , body{
+    overflow-x: hidden;
+   overflow-y: auto; 
+
+}
 
 
 /* Transition delay when clicked to light mode*/
