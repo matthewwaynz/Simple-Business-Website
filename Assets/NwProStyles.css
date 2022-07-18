@@ -8,11 +8,13 @@ margin: 0;
 }
 .section-a{
     background-image: url(./images/kids-play.jpg);
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
 }
+
+
 
 
 /* Transition delay when clicked to light mode*/
