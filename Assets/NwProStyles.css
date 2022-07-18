@@ -11,9 +11,12 @@ margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
     background-position: center;
     height: 120vh;
+    margin-left: 0;
+    margin-right: 0;
+
     transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
