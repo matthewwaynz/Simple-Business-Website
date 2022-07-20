@@ -63,7 +63,7 @@ line-height: 1.5;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    overscroll-behavior-x: none;
+    overflow-x: hidden;
 }
 
 .brand{
