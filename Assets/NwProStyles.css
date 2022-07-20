@@ -59,6 +59,13 @@ line-height: 1.5;
 
 }
 
+.navigation{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overscroll-behavior-x: none;
+}
+
 .brand{
 text-transform: uppercase;
 font-weight: 700;
