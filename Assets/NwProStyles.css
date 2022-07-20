@@ -353,10 +353,10 @@ body:not(.dark-mode) .mode-button{
 
 
 
-/* 
+
 
 @media (min-width: 1000px) {
-     Scroll Bar Styles 
+     /* Scroll Bar Styles  */
     
 *::-webkit-scrollbar{
     width: 12px;
@@ -375,7 +375,7 @@ body:not(.dark-mode) .mode-button{
     border: 3px solid rgb(66, 22, 71);
 }
     
-} */
+} 
 
 
 
