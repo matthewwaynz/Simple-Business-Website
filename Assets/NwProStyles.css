@@ -6,6 +6,10 @@ body{
     overflow-x: hidden;
     max-width: 100%;
 }
+body, html{
+   margin-left: auto;
+   margin-right: auto;
+}
 
 *{
 box-sizing: border-box;
