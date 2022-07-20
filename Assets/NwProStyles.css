@@ -20,6 +20,7 @@ margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
   
 
     transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
