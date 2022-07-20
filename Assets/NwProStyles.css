@@ -431,7 +431,7 @@ body {
     display: grid;
     grid-gap: 1rem;
     padding: 1rem;
-    max-width: 1024px;
+    max-width: 78%;
     margin: 0 auto;
     font-family: var(--font-sans);
     overflow-x: hidden;
@@ -439,6 +439,7 @@ body {
 @media (min-width: 600px) {
     .page-content {
         grid-template-columns: repeat(2, 1fr);
+       
    }
 }
 @media (min-width: 800px) {
@@ -890,7 +891,7 @@ hr{
     --offset: 130px;
      position: sticky;
     bottom: 2rem; 
-    right: 2rem;
+    right: 1.7rem;
     place-self: end;
      margin-top: calc(170vh + var(--offset)); 
     padding: 5px;
@@ -906,7 +907,7 @@ hr{
 display: flex;
 flex-direction: column;
 position: fixed;
-right: 2rem;
+right: 1.5rem;
 top: 7rem;
 max-width: 100%;
 }
