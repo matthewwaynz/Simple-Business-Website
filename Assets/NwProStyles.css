@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body, html{
     overflow-x: hidden;
     max-width: 100%;
 }
