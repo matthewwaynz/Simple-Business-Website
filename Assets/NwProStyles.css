@@ -857,6 +857,7 @@ hr{
 .social-links{
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right: 0;
 }
 
 .social-links a{
@@ -886,6 +887,7 @@ hr{
     padding: 5px;
     color: rgb(160, 12, 160);
     scroll-behavior: smooth;
+    margin-right: 0;
     }
 
 
@@ -930,4 +932,5 @@ top: 7rem;
 
   body{
     overflow-x: hidden !important;
+
   }
