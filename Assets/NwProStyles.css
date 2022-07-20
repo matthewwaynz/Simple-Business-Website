@@ -762,6 +762,8 @@ hr{
 .events{
     display: flex;
     justify-content: center;
+    overflow-x: unset;
+    overflow-x: hidden;
 }
 .box-two{
     text-align: left;
@@ -923,4 +925,9 @@ top: 7rem;
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+
+
+  body{
+    overflow-x: hidden !important;
   }
