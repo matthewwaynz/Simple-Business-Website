@@ -19,8 +19,7 @@ margin: 0;
     background-image: url(https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    background-attachment: local;
   
 
     transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
