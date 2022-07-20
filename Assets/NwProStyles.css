@@ -896,7 +896,7 @@ hr{
     --offset: 130px;
      position: sticky;
     bottom: 2rem; 
-    right: 1.7rem;
+    right: 2rem;
     place-self: end;
      margin-top: calc(170vh + var(--offset)); 
     padding: 5px;
@@ -912,7 +912,7 @@ hr{
 display: flex;
 flex-direction: column;
 position: fixed;
-right: 1.5rem;
+right: 2rem;
 top: 7rem;
 max-width: 100%;
 }
