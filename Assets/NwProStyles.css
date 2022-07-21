@@ -721,11 +721,11 @@ body {
 
   @media (max-width: 499px) {
     #slider{
-        width: 400px;
+        width: 80%;
         height: 236px;
     }
     #slider ul li img{
-        width: 400px;
+        width: 80%;
         height: 236px;
     }
     
@@ -734,11 +734,11 @@ body {
 
   @media (max-width: 380px) {
     #slider{
-        width: 365px;
+        width: 80%;
         height: 216px;
     }
     #slider ul li img{
-        width:365px;
+        width:80%;
         height: 216px;
     }
     
@@ -961,6 +961,8 @@ max-width: 100%;
 
   }
 
-  body{
-    width: auto;
+  @media (max-width: 600px) {
+    body, html{
+    }
+    
   }
