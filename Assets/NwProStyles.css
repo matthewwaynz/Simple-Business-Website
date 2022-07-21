@@ -450,13 +450,30 @@ body {
     font-family: var(--font-sans);
     overflow-x: hidden;
 }
-@media (min-width: 600px) {
+
+
+
+@media (max-width: 759px) {
     .page-content {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        
        
    }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 760px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+        
+       
+   }
+}
+@media (min-width: 960px) {
     .page-content {
         grid-template-columns: repeat(4, 1fr);
    }
@@ -662,6 +679,8 @@ body {
     overflow-x: hidden;
     max-width: 100%;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
@@ -723,6 +742,7 @@ body {
     #slider{
         width: 380px;
         height: 236px;
+        
     }
     #slider ul li img{
         width: 380px;
